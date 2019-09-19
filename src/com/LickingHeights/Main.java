@@ -9,6 +9,12 @@ public class Main {
         Scanner keyboard;
         int userHeight, userWeight;
         double userHeightInMeters, userWeightInKilograms, userHeightSquared, BMI;
+        keyboard = new Scanner(System.in);
+        System.out.print("What is your height in inches?");
+        userHeight = keyboard.nextInt();
+
+        userHeightInMeters = userHeight/39.37;
+        System.out.println(userHeightInMeters);
         
     }
 }
