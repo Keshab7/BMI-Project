@@ -17,7 +17,15 @@ public class Main {
         System.out.println("What is your weight in pounds?");
         userWeight = keyboard.nextInt();
         userWeightInKilograms = userWeight/2.205;
+        System.out.println(userWeightInKilograms);
 
-        
+        userHeightSquared = userHeightInMeters*userHeightInMeters;
+
+        System.out.println(userHeightSquared);
+
+        BMI = userWeightInKilograms/userHeightSquared;
+
+        System.out.print("Your BMI is " + BMI);
+
     }
 }
